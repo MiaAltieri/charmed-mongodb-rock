@@ -1,4 +1,4 @@
-name: Publish ROCK (edge)
+name: Publish rock (edge)
 on:
   push:
     branches:

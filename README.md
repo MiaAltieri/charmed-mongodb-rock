@@ -1,36 +1,36 @@
-## Introduction to Charmed MongoDB ROCK  (OCI Image)
-[![Publish ROCK](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/publish.yaml/badge.svg)](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/publish.yaml)
+## Introduction to Charmed MongoDB rock  (OCI Image)
+[![Publish rock](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/publish.yaml/badge.svg)](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/publish.yaml)
 [![Operator Tests](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/integration.yaml/badge.svg)](https://github.com/canonical/charmed-mongodb-rock/actions/workflows/integration.yaml)
 
 [MongoDB](https://github.com/mongodb/mongo) is a source-available, cross-platform, document-oriented database application. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
-Charmed MongoDB ROCK is an Open Container Initiative (OCI) image derived from the [Charmed MongoDB Snap](https://snapcraft.io/charmed-mongodb). The tool used to create this ROCK is called [Rockcraft](https://canonical-rockcraft.readthedocs-hosted.com/en/latest/index.html).
+Charmed MongoDB rock is an Open Container Initiative (OCI) image derived from the [Charmed MongoDB Snap](https://snapcraft.io/charmed-mongodb). The tool used to create this rock is called [Rockcraft](https://canonical-rockcraft.readthedocs-hosted.com/en/latest/index.html).
 
-The [Charmed MongoDB ROCK](https://github.com/canonical/charmed-mongodb-rock/pkgs/container/charmed-mongodb)  is an enhanced, source-available, fully-compatible, drop-in replacement of the OCI image of MongoDB 6.0.6 Community version. In addition, the Charmed MongoDB ROCK package offers more features than the MongoDB Community version, such as backup and restore, monitoring and security features.
+The [Charmed MongoDB rock](https://github.com/canonical/charmed-mongodb-rock/pkgs/container/charmed-mongodb)  is an enhanced, source-available, fully-compatible, drop-in replacement of the OCI image of MongoDB 6.0.6 Community version. In addition, the Charmed MongoDB rock package offers more features than the MongoDB Community version, such as backup and restore, monitoring and security features.
 
-One benefit of using the Charmed MongoDB ROCK is that it bundles MongoDB with other tools in its ecosystem to be used in the Charmed MongoDB Operator. One of the operators that uses this ROCK is the [Charmed MongoDB (Kubernetes Operator)](https://charmhub.io/mongodb-k8s).
+One benefit of using the Charmed MongoDB rock is that it bundles MongoDB with other tools in its ecosystem to be used in the Charmed MongoDB Operator. One of the operators that uses this rock is the [Charmed MongoDB (Kubernetes Operator)](https://charmhub.io/mongodb-k8s).
 
 The Charmed MongoDB (Kubernetes Operator) delivers automated operations management from day 0 to day 2 on the[  ](https://github.com/mongodb/mongo)MongoDB document database. Charmed MongoDB (K8s Operator) is an enhanced, open source and fully-compatible, drop-in replacement for the MongoDB Community Edition with advanced MongoDB enterprise features. You can use the operator to manage your MongoDB clusters with automation capabilities.  In addition, it provides automated database operations on a wide range of cloud and cloud-like environments, including AWS, Azure, OpenStack and VMWare. 
 
 ## Version
 
-ROCKs will be named as `<version>-<series>_<risk>`.
+Rocks will be named as `<version>-<series>_<risk>`.
 
-`<version>` is the software version; `<series>` is the Ubuntu LTS series that ROCKs supports; and the <risk> is the type of release, if it is edge, candidate or stable. Example versioning will be 5-22.04_stable which means Charmed MongoDB is a version 5 of the software, supporting the 22.04 Ubuntu release and currently a 'stable' version of the software. See  versioning details [here](https://snapcraft.io/docs/channels).
+`<version>` is the software version; `<series>` is the Ubuntu LTS series that rocks supports; and the <risk> is the type of release, if it is edge, candidate or stable. Example versioning will be 5-22.04_stable which means Charmed MongoDB is a version 5 of the software, supporting the 22.04 Ubuntu release and currently a 'stable' version of the software. See  versioning details [here](https://snapcraft.io/docs/channels).
 
 Channel can also be represented by combining `<version>_<risk>`
 
 ## Release
-Charmed MongoDB ROCK  Release Notes
+Charmed MongoDB rock  Release Notes
 https://discourse.charmhub.io/t/release-notes-charmed-mongodb-5-rock/10038
 
-## ROCKS Usage
+## Rocks Usage
 ### Starting mongod and accessing the database
-To get started with the charmed-mongodb ROCKS, first install docker:
+To get started with the charmed-mongodb rocks, first install docker:
 ```
 sudo snap install docker
 ```
-Then to use the Charmed MongoDB ROCK run the following command 
+Then to use the Charmed MongoDB rock run the following command
 ```
 sudo docker run --rm -it ghcr.io/canonical/charmed-mongodb:6.0.6-22.04_edge
 ```
@@ -62,7 +62,7 @@ While using `mongo` can run a variety of [database commands](https://www.mongodb
 
 
 ### Backup and restore
-Percona Backup for MongoDB (`pbm`) is packaged within the Charmed MongoDB ROCK. To use it you can follow these instructions.
+Percona Backup for MongoDB (`pbm`) is packaged within the Charmed MongoDB rock. To use it you can follow these instructions.
 
 Percona Backup for MongoDB has a set of pre-requisites, to function properly. These can be found here:[ https://docs.percona.com/percona-backup-mongodb/initial-setup.html](https://docs.percona.com/percona-backup-mongodb/initial-setup.html)
 
@@ -99,8 +99,9 @@ Check out the rest of the supported operations with:
 docker exec <container-name> pbm --help
 ``` 
 
-### Others tools within the ROCK
-The MongoDB ROCK also packages other useful tools like `mongodb-exporter`, `mongodump`, `mongorestore`, and many other tools. You can read more about the tools packaged in the snap by entering:
+### Others tools within the rock
+
+The MongoDB rock also packages other useful tools like `mongodb-exporter`, `mongodump`, `mongorestore`, and many other tools. You can read more about the tools packaged in the snap by entering:
 ```
 docker exec <container-name> <tool name> --help`
 ``` 
@@ -108,7 +109,7 @@ docker exec <container-name> <tool name> --help`
 
 ## Bugs and feature request
 
-If you find a bug in this ROCK or want to request a specific feature, here are the useful links:
+If you find a bug in this rock or want to request a specific feature, here are the useful links:
 
 -   Raise the issue or feature request in the [Canonical Github](https://github.com/canonical/charmed-mongodb-rock/issues)
 

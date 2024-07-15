@@ -1,4 +1,4 @@
-name: Publish ROCK (beta)
+name: Publish rock (beta)
 on: workflow_dispatch
 
 jobs:
