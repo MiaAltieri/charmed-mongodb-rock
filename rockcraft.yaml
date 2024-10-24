@@ -19,6 +19,8 @@ services:
 
 platforms: # The platforms this rock should be built on and run on
   amd64:
+extensions:
+  - flask-framework
 
 parts:
   mongo-snap:
