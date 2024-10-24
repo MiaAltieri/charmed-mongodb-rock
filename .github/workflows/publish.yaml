@@ -1,4 +1,4 @@
-name: Publish to GHCR
+name: Publish tmp to GHCR
 
 env:
   RELEASE: edge
